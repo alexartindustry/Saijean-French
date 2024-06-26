@@ -1,0 +1,30 @@
+.lesson-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 90px;
+}
+
+.lesson-title {
+	padding: 40px 0 25px 0;
+}
+
+.lesson {
+	padding: 40px;
+}
+
+.info {
+	padding: 55px 60px 55px 0;
+}
+
+@media(max-width: 1260px) {
+  .lesson {
+  	padding: 40px 20px;
+  }
+}
+
+@media(max-width: 960px) {
+  .info {
+  	padding-right: 0;
+  }
+}

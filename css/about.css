@@ -1,0 +1,153 @@
+.w60 {
+	width: 55%;
+}
+
+.saijin {
+	position: absolute;
+	right: -50px;
+	bottom: 0;
+    height: 104%;
+}
+
+.about {
+	min-height: 600px;
+	padding-top: 100px;
+	padding-bottom: 110px;
+	overflow: hidden;
+}
+
+.logo3 {
+	margin-bottom: 10px;
+}
+
+@media(max-width: 1260px) {
+	.w60 {
+		width: 100%;
+	}
+	.saijin {
+		position: relative;
+		right: auto;
+		left: 45%;
+		transform: translateX(-50%);
+		height: auto;
+		max-width: none;
+	}
+	.about {
+		padding-top: 80px;
+		padding-bottom: 0;
+	}
+	.logo3 {
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+}
+
+/*videos*/
+  iframe {
+	width: 100%;
+  }
+
+  .video {
+	position:relative;
+	z-index: 900;
+	width: 100%;
+	height:450px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	overflow: hidden;
+	padding: 20px;
+  }
+  
+  .video iframe, .video video {
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+  }
+  
+  .video .video-js {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100% !important;
+	height: 100% !important;
+    object-fit: cover;
+  }
+  
+  .video .video-js button.vjs-big-play-button {
+	background: none;
+	border: 0;
+	top: auto;
+	left: auto;
+	width: 70px;
+	height: 70px;
+  }
+  
+  .video .vjs-poster {
+	background-size: cover;
+  }
+
+  .vjs-big-play-button {
+	width: 70px;
+	height: 70px;
+	top: 50% !important;
+	left: 50% !important;
+	transform: translateX(-50%) translateY(-50%);
+  }
+  
+  .video .vjs-big-play-button:before {
+	content: url(../img/player.svg);
+	width: 70px;
+	height: 70px;
+  }
+  
+  .video .vjs-big-play-button span.vjs-icon-placeholder:before {
+	display: none;
+  }
+  
+  .video .video-js:hover .vjs-big-play-button:before {
+	content: url(../img/player2.svg);
+	width: 70px;
+	height: 70px;
+  }
+
+  .gallery-item {
+	  display: block;
+	  height: 725px;
+  }
+
+  .gallery-img {
+	  position: relative;
+	  width: 100%;
+	  height: 100%;
+	  background-size: cover;
+	  background-position: center;
+  }
+
+  .photo-desc {
+	  min-height: 120px;
+	  position: absolute;
+	  z-index: 1000;
+	  width: 100%;
+	  bottom: 0;
+	  left: 0;
+	  background-color: rgba(42,42,42,0.8);
+	  transform: scale(0.5);
+	  opacity: 0;
+	  padding: 30px;
+	  transition: .2s;
+  }
+
+  .gallery-item:hover .photo-desc {
+	transform: scale(1);
+	opacity: 1;
+	transition: .2s;
+  }
+
+  .photo-desc p {
+	  color: #fff;
+  }
+
+
+  
